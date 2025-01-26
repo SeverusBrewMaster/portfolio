@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/sections.css">
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/theme.js"></script>
     <script src="https://kit.fontawesome.com/89cd728e8b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -134,19 +136,5 @@
             </div>
         </section>
     </main>
-
-    <script src="scripts/sidebar.js"></script>
-    <script>
-        // Check for saved theme in localStorage
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    
-        function toggleTheme() {
-          const currentTheme = document.documentElement.getAttribute('data-theme');
-          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-          document.documentElement.setAttribute('data-theme', newTheme);
-          localStorage.setItem('theme', newTheme); // Save the theme
-        }
-    </script>
 </body>
 </html>

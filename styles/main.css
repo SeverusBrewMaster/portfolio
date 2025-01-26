@@ -1,17 +1,5 @@
 /* Main CSS file for overall layout and common elements */
 :root {
-    --primary-color: #404465;
-    --secondary-color: #898fd9;
-    --text-color: black;
-    --button-text: rgb(255, 255, 255); 
-    --background-color: #f5fdff36;
-    --nav-background: #f5fdff;
-    --card-background: rgb(192 215 130 / 7%);
-    --box-border: 0px 0px 6px 2px rgb(127 136 240 / 15%);
-    --button-border: 0px 0px 8px 2px rgba(41, 49, 128, 0.793);
-    
-}
-[data-theme="dark"]{
     --primary-color: #2a2d44;
     --secondary-color: #3a49ea;
     --text-color: rgb(179, 184, 247);
@@ -21,6 +9,17 @@
     --card-background: rgb(0 0 0 / 25%);
     --box-border: 0px 0px 0px 1px rgb(255 255 255 / 15%);
     --button-border: 0px 0px 8px 2px rgb(214 217 246 / 54%);
+}
+[data-theme="dark"]{
+    --primary-color: #404465;
+    --secondary-color: #898fd9;
+    --text-color: black;
+    --button-text: rgb(255, 255, 255); 
+    --background-color: #f5fdff36;
+    --nav-background: #f5fdff;
+    --card-background: rgb(192 215 130 / 7%);
+    --box-border: 0px 0px 6px 2px rgb(127 136 240 / 15%);
+    --button-border: 0px 0px 8px 2px rgba(41, 49, 128, 0.793);
 }
 
 * {
