@@ -1,0 +1,124 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: transparent;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar-nav .nav-button {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 15px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;;
+    width: 100%;
+}
+
+.sidebar-nav .nav-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.button-nav{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 50px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: var(--button-text);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.4s ease;
+  }
+
+  .button-nav .icon,
+  .button-nav .text {
+    position: absolute;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .button-nav .icon {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .button-nav .text {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  .button-nav:hover .icon {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .button-nav:hover .text {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.main-content {
+    margin-left: 140px;
+    width: calc(95% - 100px);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 0;
+       
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        position: relative;
+        transform: none;
+        justify-content: center;
+        background-color: var(--nav-background);
+        gap: 1rem;
+        width: auto;
+    }
+
+    .sidebar-nav .nav-button {
+        margin: 0 5px;
+        width: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-bottom: 60px;
+        width: auto;
+    }
+}
