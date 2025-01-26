@@ -91,6 +91,7 @@
 @media (max-width: 768px) {
     .sidebar {
         bottom: 0;
+        margin-bottom: 25px;
         left: 0;
         width: 100%;
         height: auto;
